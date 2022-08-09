@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+			<div class="row justify-content-sm-center" id="first">
+        <header class="col-sm-12 col-xl-6 offset-xl-3" id="header">
+          <h1>Simple, traffic-based pricing</h1>
+          <p>Sign-up for our 30-day trial. No credit card required. </p>
+        </header>
+      </div>
+			<div class="row justify-content-sm-center" id="second">
+        <main class="col-sm-12 col-xl-6 offset-xl-3" id="main">
+          <div class="mobiledesign">
+            <p class="views"><span id="views1">100K </span><span class="pageviews">Pageviews</span></p>
+            <div class="slidecontainer">
+              <input type="range" min="0" max="36" step="4" value="16" name="slider1" class="slider1" id="slider1" />
+            </div>
+            <p class="monthPrice"><span id="value1"></span><span class="month">/month</span></p>
+          </div>
+          <div class="desktopdesign">
+            <div class="intro">
+              <p class="views"><span id="views2">100k </span><span class="pageviews">Pageviews</span></p>
+              <p class="monthPrice"><span id="value2"></span><span class="month">/month</span></p>
+            </div>
+            <div class="slidecontainer">
+              <input type="range" min="0" max="36" step="4" value="16" name="slider2" class="slider2" id="slider2" />
+            </div>
+          </div>
+          <div class="col-sm-12" id="period">
+            <p id="monthly">Monthly Billing</p>
+            <label class="toggle">
+              <input type="checkbox" id="toggle" checked />
+              <span class="slider"></span>
+            </label>
+            <p id="annually">Yearly Billing<span class="discount">25%</span></p>
+            <p id="annually1">Yearly Billing<span class="discount">25% discount</span></p>
+          </div>
+          <hr />
+          <div class="col-sm-12" id="plan">
+            <ul class="plan">
+              <li>Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </ul>
+            <button>Start my trial</button>
+          </div>  
+        </main>
+      </div>
+			<div class="row justify-content-sm-center" id="third">
+        <footer class="col-sm-12 col-xl-6 offset-xl-3" id="footer">
+          <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://">Antonio Sala</a>.
+          </div>
+        </footer>
+      </div>  
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
